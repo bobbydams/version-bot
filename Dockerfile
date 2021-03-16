@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-# ENV DIRECTORY="/scr/"
+# ENV DIRECTORY="/src"
 
 COPY package.json yarn.lock /version_app/
 
@@ -11,6 +11,6 @@ RUN apk update && \
     apk add git && \
     yarn install
 
-COPY bin/ /version_app/
+COPY bin/index.js /version_app/
 
-ENTRYPOINT [ "node", "/version_app/bin/index.js", "create-release"]
+ENTRYPOINT [ "node", "/version_app/index.js", "set-version"]
