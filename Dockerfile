@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-# ENV DIRECTORY="/src"
+ENV DIRECTORY="/src"
 
 COPY package.json yarn.lock /version_app/
 
