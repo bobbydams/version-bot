@@ -1,0 +1,25 @@
+{
+  "name": "version-bot",
+  "version": "1.0.0",
+  "description": "A CLI for handling various tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "version-bot": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:bobbydams/version-bot.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/bobbydams/version-bot#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "inquirer": "^8.0.0",
+    "shelljs": "^0.8.4"
+  }
+}
